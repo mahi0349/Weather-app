@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather_app</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="weather_container">
-            <div class="temp">
-                <p>20</p>
-            </div>
-            <div class="time_loca">
-                <p>Delhi</p>
-                <p>10.30 - Sunday 2025-04-06</p>
-            </div>
-            <div class="condition">
-                <p></p>
-                <p>Mist</p>
-            </div>
-        </div>
-    </div>
-
     <nav>
-        <form>
-            <input type="text" placeholder="Search for a city" class="search_area"/>
-            <button type="submit">Search Button</button>
+        <form class="search-form">
+            <input type="text" placeholder="Search for a city" class="search_area" />
+            <button type="submit">Search</button>
         </form>
     </nav>
 
+    <div class="container">
+        <div class="weather_container">
+            <div class="temp">
+                <p>20°C</p>
+            </div>
+            <div class="time_loca">
+                <p class="location">Delhi</p>
+                <span class="datetime">10:30 AM - Sunday, 2025-04-06</span>
+            </div>
+            <div class="condition">
+                <p class="weather-icon">☁️</p>
+                <p class="weather-text">Mist</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="script.js"></script>
