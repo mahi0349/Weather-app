@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Search Form -->
     <nav>
         <form class="search-form">
-            <input type="text" placeholder="Search for a city" class="search_area" />
+            <input type="text" placeholder="Search for a city" class="search_area" required />
             <button type="submit">Search</button>
         </form>
     </nav>
 
-    <div class="container">
+    <!-- Unit Toggle -->
+    <div class="toggle">
+        <label>
+            <input type="checkbox" id="unitToggle" />
+            Show in °F
+        </label>
+    </div>
+
+    <!-- Weather Container -->
+    <main class="container">
         <div class="weather_container">
             <div class="temp">
-                <p>20°C</p>
+                <p>--°C</p>
             </div>
             <div class="time_loca">
-                <p class="location">Delhi</p>
-                <span class="datetime">10:30 AM - Sunday, 2025-04-06</span>
+                <p class="location">City</p>
+                <span class="datetime">--:-- -- - Day, YYYY-MM-DD</span>
             </div>
             <div class="condition">
-                <p class="weather-icon">☁️</p>
-                <p class="weather-text">Mist</p>
+                <img class="weather-icon" src="" alt="Weather Icon" />
+                <p class="weather-text">--</p>
             </div>
+            <p class="error-message" style="display: none;"></p>
         </div>
+    </main>
+
+    <!-- Forecast Section -->
+    <div class="forecast">
+        <h2>3-Day Forecast</h2>
+        <div class="forecast-cards"></div>
     </div>
+
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
