@@ -49,7 +49,6 @@ window.addEventListener("load", () => {
     }
 });
 
-
 const fetchResults = async (targetLocation) => {
     const url = `https://api.weatherapi.com/v1/forecast.json?key=9188839f48df47c0ab652839250604&q=${targetLocation}&days=3&aqi=no&alerts=no`;
 
